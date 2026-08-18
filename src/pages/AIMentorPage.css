@@ -1,0 +1,80 @@
+.ai-grid {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.ai-form-panel {
+  position: sticky;
+  top: 84px;
+}
+
+.ai-badge {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--primary-600), var(--cyan-500));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ai-response-panel {
+  min-height: 300px;
+}
+
+.ai-sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.ai-section {
+  background: var(--neutral-50);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+
+.ai-section h3 {
+  font-size: 14px;
+  color: var(--primary-700);
+  margin-bottom: var(--space-2);
+}
+
+.ai-section ul {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ai-section li {
+  font-size: 14px;
+  color: var(--neutral-700);
+}
+
+.ai-section p {
+  font-size: 14px;
+  color: var(--neutral-700);
+}
+
+.ai-actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border);
+  padding-top: var(--space-4);
+}
+
+@media (max-width: 960px) {
+  .ai-grid {
+    grid-template-columns: 1fr;
+  }
+  .ai-form-panel {
+    position: static;
+  }
+}

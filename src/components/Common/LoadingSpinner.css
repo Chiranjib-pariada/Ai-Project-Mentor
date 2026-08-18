@@ -1,0 +1,13 @@
+.loading-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-8) var(--space-4);
+}
+
+.loading-msg {
+  color: var(--text-muted);
+  font-size: 14px;
+}

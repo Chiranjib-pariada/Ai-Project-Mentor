@@ -1,0 +1,31 @@
+.detail-summary {
+  background: linear-gradient(160deg, #ffffff 0%, var(--primary-50) 140%);
+}
+
+.detail-summary-head h2 {
+  font-size: 22px;
+}
+
+.detail-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.detail-progress {
+  max-width: 480px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+@media (max-width: 520px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

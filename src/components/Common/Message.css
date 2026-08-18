@@ -1,0 +1,40 @@
+.msg {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: var(--space-4);
+  border: 1px solid transparent;
+}
+
+.msg-success {
+  background-color: var(--success-50);
+  color: var(--success-700);
+  border-color: var(--success-100);
+}
+
+.msg-error {
+  background-color: var(--error-50);
+  color: var(--error-700);
+  border-color: var(--error-100);
+}
+
+.msg-close {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 4px;
+  opacity: 0.7;
+}
+
+.msg-close:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.05);
+}
